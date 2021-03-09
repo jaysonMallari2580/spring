@@ -1,0 +1,10 @@
+<p>user-list works!</p>
+<h2>Users List</h2>
+<div *ngFor='let user of users'>
+    <a [routerLink]="['/edit-user',user.id]"></a>
+    {{user.name}}
+</div>
+
+<div>
+  <button [routerLink]="['/add-user']"> Add </button>
+</div>
